@@ -1,0 +1,16 @@
+1. Crie o arquivo com o conteúdo acima:
+
+	nano instalar_python_3.12.sh
+
+Cole o conteúdo e salve com Ctrl+O, depois Enter e saia com Ctrl+X.
+
+
+2. Dê permissão de execução ao script:
+
+	chmod +x instalar_python_3.12.sh
+
+
+3. Execute o script:
+
+	./instalar_python_3.12.sh
+
