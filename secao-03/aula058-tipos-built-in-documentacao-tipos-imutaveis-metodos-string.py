@@ -4,8 +4,8 @@
 
 
 string = "luiz Otávio"
-# string[3] = "ABC"
 print(string[3])
+# string[3] = "ABC"
 
 outra_variavel = f"{string[:3]}ABC{string[4:]}"
 print(outra_variavel)
