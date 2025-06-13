@@ -4,9 +4,7 @@
 i = 0
 qtd_apareceu_mais_vezes = 0
 letra_apareceu_mais_vezes = ""
-frase = "O Python é uma linguagem de programação " \
-    "multiparadigma. " \
-    "Python foi criado por Guido Van Rossum."
+frase = "Erick Ferreira da Silva"
 
 
 while i < len(frase):
