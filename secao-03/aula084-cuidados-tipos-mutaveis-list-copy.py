@@ -14,34 +14,19 @@ Métodos úteis:
     clear - Limpa a lista.
     extend - Estende a lista.
     + - Concatena listas.
+
+Cuidados com dados mutáveis:
+    = - Copiado o valor (imutaveis)
+    = - Aponta para o mesmo valor na memória (mutável)
 """
 
+# 
+lista_a = ["Luiz", "Maria", 1, True, 1.2]
+print(f"Lista A: {lista_a}")
 
-lista = [10, 20, 30, 40]
-print(lista)
+lista_b = lista_a.copy()
+print(f"Lista B: {lista_b}")
 
-lista.append("Luiz")
-print(lista)
-
-nome = lista.pop()
-print(nome)
-
-lista.append(1233)
-print(lista)
-
-del lista[-1]
-print(lista)
-
-lista.clear()
-print(lista)
-
-lista.insert(0, 0)
-lista.insert(1, 10)
-lista.insert(2, 20)
-lista.insert(3, 30)
-lista.insert(4, 40)
-print(lista)
-
-lista.insert(1, 1)
-lista.insert(100, 100) # Ele irá inserir no último índice, já que não existe o índice '100'.
-print(lista)
+lista_a[0] = "Qualquer coisa"
+print(f"Lista A: {lista_a}")
+print(f"Lista B: {lista_b}")

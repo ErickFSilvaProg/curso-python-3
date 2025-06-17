@@ -16,32 +16,16 @@ Métodos úteis:
     + - Concatena listas.
 """
 
+# 
+lista_a = [1,2,3]
+lista_b = [4,5,6]
 
-lista = [10, 20, 30, 40]
-print(lista)
+# Concatenando as listas:
+lista_c = lista_a + lista_b
 
-lista.append("Luiz")
-print(lista)
+# O método 'extend' não retorna nada, apenas executa uma ação:
+lista_a.extend(lista_b)
 
-nome = lista.pop()
-print(nome)
-
-lista.append(1233)
-print(lista)
-
-del lista[-1]
-print(lista)
-
-lista.clear()
-print(lista)
-
-lista.insert(0, 0)
-lista.insert(1, 10)
-lista.insert(2, 20)
-lista.insert(3, 30)
-lista.insert(4, 40)
-print(lista)
-
-lista.insert(1, 1)
-lista.insert(100, 100) # Ele irá inserir no último índice, já que não existe o índice '100'.
-print(lista)
+# 
+print(lista_c)
+print(lista_a)
