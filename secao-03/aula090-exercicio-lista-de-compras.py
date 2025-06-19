@@ -40,7 +40,6 @@ try:
                 if lista_compras != []:
 
                     for indice, item in enumerate(lista_compras):
-                        indice += 1
                         print(f"{indice}) {item}")
                 
                 else:
@@ -64,10 +63,10 @@ try:
 
             # ******************************************
             os.system("cls") # Limpa o terminal
-            digitar_item = ""
+            apagar_item = ""
 
             # ******************************************
-            while digitar_item != "$":
+            while apagar_item != "$":
                 
                 os.system("cls") # Limpa o terminal
                 
@@ -77,21 +76,20 @@ try:
                 if lista_compras != []:
 
                     for indice, item in enumerate(lista_compras):
-                        indice += 1
                         print(f"{indice}) {item}")
-                
                 else:
                     print("\nNada para listar.\n")
                 
                 # ******************************************
                 print("\n\n - Apagar item da lista?\n")
-                digitar_item = input("Digite o item | [$]air: ")
+                apagar_item = input("Digite o item | [$]air: ")
                 
-                if digitar_item == "":
+                if apagar_item == "":
                     continue
-
-                if digitar_item != '$':
-                    pass # >>>>>>>>>> PROGRAMAR AQUI <<<<<<<<<<
+                elif apagar_item != '$':
+                    
+                    if lista_compras != []:
+                        del lista_compras[int(apagar_item)]
 
                 os.system("cls") # Limpa o terminal
 
@@ -109,7 +107,6 @@ try:
 
                 # ******************************************
                 for indice, item in enumerate(lista_compras):
-                    indice += 1
                     print(f"{indice}) {item}")
 
                 print()
@@ -135,5 +132,5 @@ except:
     os.system("cls") # Limpa o terminal
     print(
     """
-    Erro encontrado. Programa finalizado!
+    Um erro foi encontrado. Programa finalizado!
     """)
