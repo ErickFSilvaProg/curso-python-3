@@ -6,8 +6,10 @@ Não permita que o programa quebre com erros de índices inexistentes na lista.
 
 # Solução do professor Luiz.
 
+# Imports
 import os
 
+# Variáveis
 lista = []
 
 # Laço para automatizar o programa:
@@ -32,7 +34,7 @@ while True:
             del lista[indice]
         
         except ValueError: # Erro no tipode valor digitado/convertido.
-            print('Por favor digite um númro inteiro.')
+            print('Por favor digite um número inteiro.')
         
         except IndexError: # Erro na posição informada do item.
             print('Índece não existe na lista.')

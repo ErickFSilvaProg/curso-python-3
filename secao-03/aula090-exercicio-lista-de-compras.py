@@ -21,7 +21,6 @@ try:
         opcao_entrada = input("[i]nserir [a]pagar [l]istar [s]air: ")
         print()
 
-
         # INSERIR ########################################
         if opcao_entrada == "i":
 
@@ -43,7 +42,7 @@ try:
                         print(f"{indice}) {item}")
                 
                 else:
-                    print("\nNada para listar.\n")
+                    print("\nNada para listar.")
                 
                 # ******************************************
                 print("\n\n - Adicionar item à lista?\n")
@@ -56,7 +55,6 @@ try:
                     lista_compras.append(digitar_item)
 
                 os.system("cls") # Limpa o terminal
-
 
         # APAGAR ########################################
         if opcao_entrada == "a":
@@ -78,21 +76,28 @@ try:
                     for indice, item in enumerate(lista_compras):
                         print(f"{indice}) {item}")
                 else:
-                    print("\nNada para listar.\n")
+                    print("\nNada para listar.")
                 
                 # ******************************************
-                print("\n\n - Apagar item da lista?\n")
-                apagar_item = input("Digite o item | [$]air: ")
-                
-                if apagar_item == "":
-                    continue
-                elif apagar_item != '$':
+                try:
+                    print("\n\n - Apagar item da lista?\n")
+                    apagar_item = input("Digite o item | [$]air: ")
                     
-                    if lista_compras != []:
-                        del lista_compras[int(apagar_item)]
-
-                os.system("cls") # Limpa o terminal
-
+                    if apagar_item == "":
+                        continue
+                    elif apagar_item != '$':
+                        
+                        if lista_compras != []:
+                            del lista_compras[int(apagar_item)]
+                    
+                    os.system("cls") # Limpa o terminal
+                            
+                except ValueError:
+                    print("Por favor digite um número inteiro.")
+                except IndexError:
+                    print("Índice não existente na lista.")
+                except:
+                    print("Erro desconhecido na exclusão.")
 
         # LISTAR ########################################
         if opcao_entrada == "l":
@@ -114,7 +119,6 @@ try:
                 os.system("cls") # Limpa o terminal
                 print("\nNada para listar.")
         
-
         # ENTRADA VAZIA ########################################
         if opcao_entrada == "":
             
@@ -132,5 +136,5 @@ except:
     os.system("cls") # Limpa o terminal
     print(
     """
-    Um erro foi encontrado. Programa finalizado!
+    Erro desconhecido. Programa finalizado!
     """)
