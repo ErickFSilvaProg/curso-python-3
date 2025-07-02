@@ -3,7 +3,7 @@
 
 Dicionários são estruturas de dados do tipo par de 'chave' e 'valor':
     
-    - Chave - podem ser consideradas como 'índices' que vimos na lista e podem ser de tipos imutáveis como: str, int, float, bool, tuple, etc.
+    - Chave - podem ser consideradas como os 'índices' que vimos na lista e podem ser de tipos imutáveis como: str, int, float, bool, tuple, etc.
 
     - Valor - pode ser de qualquer tipo, incluindo outro dicionário.
 
