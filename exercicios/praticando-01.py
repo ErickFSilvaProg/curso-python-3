@@ -1,13 +1,19 @@
 # Praticando 01:
 
 lista_pessoas = []
-cad_pessoas = ""
+fim_prog = False
 
-while cad_pessoas != "$":
-    cad_pessoas = input("Cadastro de pessoas. [$]air: ")
+while fim_prog is False:
+    def funcionario():
+            cad_pessoas = input("Cadastro de pessoas. [$]air: ")
+            
+            if cad_pessoas == "$":
+                return True
+            
+            lista_pessoas.append(cad_pessoas)
+            funcionario()
 
-    if cad_pessoas != "$":
-        lista_pessoas.append(cad_pessoas)
-        print(lista_pessoas)
+    fim_prog = funcionario()
 
+print("\nPrograma encerrado...")
 print(lista_pessoas)
