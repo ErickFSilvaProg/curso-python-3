@@ -10,13 +10,15 @@
     "code-runner.runInTerminal": true,
     "code-runner.ignoreSelection": true,
     "code-runner.executorMap": {
+        "python": "cls ; python -u",
         "php": "cls ; php",
         "javascript": "cls ; node",
         "typescript": "cls ; ts-node",
         "sass": "cls ; sass --style expanded",
         "scss": "cls ; scss --style expanded",
-        "less": "cls ; cd $dir && lessc $fileName $fileNameWithoutExt.css",
-        "python": "cls ; python -u"
+        "less": "cls ; cd $dir && lessc $fileName $fileNameWithoutExt.css"
     },
-    "python.defaultInterpreterPath": "python"
+    "python.defaultInterpreterPath": "python",
+    "git.autofetch": true,
+    "editor.unicodeHighlight.invisibleCharacters": false
 }
