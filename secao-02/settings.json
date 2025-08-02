@@ -10,13 +10,13 @@
     "code-runner.runInTerminal": true,
     "code-runner.ignoreSelection": true,
     "code-runner.executorMap": {
-        "php": "cls ; php",
+        "python": "cls ; python -u",
         "javascript": "cls ; node",
         "typescript": "cls ; ts-node",
         "sass": "cls ; sass --style expanded",
         "scss": "cls ; scss --style expanded",
         "less": "cls ; cd $dir && lessc $fileName $fileNameWithoutExt.css",
-        "python": "cls ; python -u"
+        "php": "cls ; php"
     },
     "python.defaultInterpreterPath": "python"
 }

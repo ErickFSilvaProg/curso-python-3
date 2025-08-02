@@ -1,4 +1,4 @@
 # Comentário de uma linha.
 
-# Função Print:
+# Função Print: Imprime na tela.
 print(123)
