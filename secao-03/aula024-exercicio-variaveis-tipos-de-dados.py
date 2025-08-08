@@ -1,7 +1,7 @@
-nome = 'Erick'
-sobrenome = 'Ferreira da Silva'
+nome = "Erick"
+sobrenome = "Ferreira da Silva"
 idade = 38
-ano_nascimento = 1986
+ano_nascimento = 2025 - idade
 maior_de_idade = idade >= 18
 altura_metros = 1.75
 
