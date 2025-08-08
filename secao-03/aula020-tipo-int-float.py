@@ -1,28 +1,32 @@
 """
-- Tipos int e float:
+- Tipos primitivos: int e float.
 
-int -> Número Inteiro.
-O tipo 'int' representa qualquer número positivo ou negativo. 'int' sem sinal é considerado positivo.
-
-float -> Número com ponto flutuante.
-O tipo 'float' representa qualquer número positivo ou negativo com ponto flutuante. 'float' sem sinal é considerado positivo.
-
-A classe 'type' mostra o tipo que o python inferiu ao valor.
+    int -> Números inteiros.
+        O tipo primitivo 'int' representa qualquer número positivo ou negativo. 'int' sem o sinal (-) é considerado positivo.
+    
+    float -> Número com ponto flutuante.
+        O tipo primitivo 'float' representa qualquer número positivo ou negativo com ponto flutuante. 'float' sem o sinal (-) é considerado positivo.
+    
+A classe 'type()' mostra o tipo que o python inferiu ao valor.
 
 Obs.: Tudo em python é um objeto.
+
 """
 
-# int
-print(11)
-print(-11)
+# int:
+print(11) # int positivo
+print(-11) # int negativo
 print(0)
+print()
 
-# float
-print(1.1)
-print(1.2, -1.3)
+# float:
+print(1.1) # float positivo
+print(-1.3) # float negativo
 print(0.0)
+print()
 
-#type: Função para ver o tipo do valor
-print(type('Python'))
-print(type(10), type(-30))
-print(type(1.10), type(-5.0))
+# type(): Função para ver o tipo do valor.
+print(type('Python'), 'Python')
+print(type(10), 10)
+print(type(1.10), 1.10)
+print()

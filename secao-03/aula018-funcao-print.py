@@ -4,7 +4,7 @@
 Ela recebe argumentos para exibição em tela.
 """
 
-# O Python diferencia letras maiúsculas dasletras minúsculas.
+# O Python diferencia letras maiúsculas das minúsculas.
 
 # Exemplos com "argumentos não nomeados":
 print(12, 34)
@@ -14,6 +14,9 @@ print()
 # Exemplos com "argumentos nomeados":
 # sep: representa o separador
 # end: representa o final do 'print'
-print(12, 11, 1986, sep="/", end=' | ')
-print(12, 11, 1996, sep='/', end=' | ')
-print(12, 11, 2006, sep='/')
+print(12, 11, 1986, sep="/", end='|')
+print(12, 11, 1996, sep='/')
+print(12, 11, 2006, sep='/', end="|")
+print(12, 11, 2016, sep="/")
+print(12, 11, 2026, sep="/", end="|")
+print(12, 11, 2036, sep="/")

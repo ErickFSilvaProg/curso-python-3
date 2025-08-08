@@ -8,16 +8,16 @@ Strings são textos que estão dentro de aspas.
 """
 
 # Tipagem dinâmica: O python sabe o tipo do dado inserido.
-print(1234)
+print(type(1234), 1234)
 
 # Aspas simples:
-print('Erick Ferreira')
+print(type('Erick Ferreira'), 'Erick Ferreira')
 
 # Aspas duplas:
-print("Programador 'Python'")
+print(type("Programador 'Python'"), "Programador 'Python'")
 
-# Escape: Barra invertida "\"
-print("Programador \"WEB\"")
+# Caractere de Escape: Barra invertida "\".
+print(type("Desenvolvedor de Software \'WEB\'"), "Desenvolvedor de Software \'WEB\'")
 
-# r: Utilizado em expressões regulares. Também exibe o caractere de escape na tela
-print(r"Programação e \"Analise de Dados\"")
+# r: Utilizado em expressões regulares. Também exibe o caractere de escape na tela.
+print(type(r"Programação e \"Analise de Dados\""), r"Programação e \"Analise de Dados\"")
