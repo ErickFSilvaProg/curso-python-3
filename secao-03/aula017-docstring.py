@@ -1,11 +1,14 @@
-# Em Python não tem como fazer comentários multilinhas.
+# Em Python não tem como fazer comentários muiltilinhas.
 
 """
-- Docstring:
+- DocString:
+
+Isso não é um comentário, mas pode ser utilizado para tal feito.
 
 O interpretador do Python ler o 'docstring'.
-Isso não é um comentário, mas pode ser utilizado para tal feito.
-Muito utilizado para escrever notas ou esplicar o código.
+
+Muito utilizado para escrever notas ou explicar o código.
+
 """
 
-print('Docstring, python.')
+print("Python.")
