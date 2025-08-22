@@ -1,16 +1,16 @@
-# Concatenação: utiliza-se o sinal de adição.
-concatenacao = 'A' + 'B' + 'C'
+# Concatenação: Utiliza-se o sinal de adição.
+concatenacao = "A" + "B" + "C"
 print(concatenacao)
 
-nomeCompleto = 'Erick' + ' ' + 'Ferreira da Silva'
-print(nomeCompleto)
+nome_completo = "Erick" + " " + "Ferreira da Silva"
+print(nome_completo)
 
-nomeIdade = 'Erick ' + str(38) + ' anos'
-print(nomeIdade)
+nome_idade = "Erick tem " + str(38) + " anos"
+print(nome_idade)
 
-# Repetição: utiliza-se o sinal de multiplilcação.
-a_dez_vezes = 'A' * 10
+# Repetição: Utiliza-se o sinal de multiplicação.
+a_dez_vezes = "A" * 10
 print(a_dez_vezes)
 
-trez_vezes_luiz = 3 * 'Luiz'
-print(trez_vezes_luiz)
+tres_vezes_erick = 3 * "Erick"
+print(tres_vezes_erick)

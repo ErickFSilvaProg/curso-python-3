@@ -1,14 +1,14 @@
 """
 - Precedência dos operadores:
 
-1. (n + n) : "Precedência mais alta"
-2. **      : Potenciação
-3. *       : Multiplicação
-   /       : Divisão
-   //      : Divisão inteira
-   %       : Módulo (resto da divisão)
-4. +       : Adição
-   -       : Subtração
+    1. (n + n) : "Precedência mais alta"
+    2. **      : Potenciação
+    3. *       : Multiplicação
+    4. /       : Divisão
+    5. //      : Divisão inteira
+    6. %       : Módulo (resto da divisão)
+    7. +       : Adição
+    8. -       : Subtração
 """
 
 conta_1 = 1 + 1 ** 5 + 5
