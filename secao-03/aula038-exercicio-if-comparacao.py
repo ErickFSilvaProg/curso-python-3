@@ -1,13 +1,30 @@
-# Exercício
+# Exercício de programação com 'if' e 'comparação':
 
-primeiro_valor = int(input('Digite o Primeiro valor: '))
-segundo_valor = int(input('Digite o segundo valor: '))
+valor1 = input("Digite um valor: ")
+valor2 = input("Digite outro valor: ")
+print()
 
-if primeiro_valor > segundo_valor:
-    print(f'"primeiro_valor({primeiro_valor})" é maior do que "segundo_valor({segundo_valor})"')
+primeiro_valor = int(valor1)
+segundo_valor = int(valor2)
 
-elif primeiro_valor == segundo_valor or segundo_valor == primeiro_valor:
-    print(f'"primeiro_valor({primeiro_valor})" é igual ao "segundo_valor({segundo_valor})"')
+# if primeiro_valor > segundo_valor:
+#     print(f"{primeiro_valor=} é maior do que {segundo_valor=}")
+#     print()
+# elif segundo_valor > primeiro_valor:
+#     print(f"{segundo_valor=} é maior do que {primeiro_valor=}")
+#     print()
+# else:
+#     print("Os valores são iguais.")
+#     print()
 
+
+if primeiro_valor == segundo_valor:
+    print("Os valores são iguais.")
+    print()
 else:
-    print(f'"segundo_valor({segundo_valor})" é maior do que "primeiro_valor({primeiro_valor})"')
+    if primeiro_valor > segundo_valor:
+        print(f"{primeiro_valor=} é maior do que {segundo_valor=}")
+        print()
+    else:
+        print(f"{segundo_valor=} é maior do que {primeiro_valor=}")
+        print()

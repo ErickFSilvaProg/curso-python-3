@@ -3,20 +3,25 @@ condicao2 = False
 condicao3 = True
 condicao4 = False
 
-
 if condicao1:
-    print('Código para a condição 1.')
-
+    print("Este é o código para a condição 1.")
+    
 elif condicao2:
-    print('Código para a condição 2.')
-
+    print("Este é o código para a condição 2.")
+    
 elif condicao3:
-    print('Código para a condição 3.')
-
+    print("Este é o código para a condição 3.")
+    
 elif condicao4:
-    print('Código para a condição 4.')
-
+    print("Este é o código para a condição 4.")
+    
 else:
-    print('Nenhuma condição foi satisfeita.')
+    print("Nenhuma condição foi satisfeita.")
 
-print('Fora do IF')
+
+if True:
+    print("Outro if")
+
+
+print("Fora do bloco if")
+print()
