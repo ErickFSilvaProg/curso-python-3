@@ -1,23 +1,29 @@
-# Operadores lógicos:
-# and (e), or (ou) e not (não).
+"""
+Operadores lógicos:
+    
+    and(e), or(ou), not(não).
 
-# not (não) - Usado para inverter a expressão booleana.
-# not True = False.
-# not False = True.
+not - Usado para inverter a expressão booleana:
+    
+    not True = False
+    not False = True
 
+"""
 
-senha = input('Senha: ')
+# Exemplo:
+senha = input("Senha: ")
 
 if not senha:
-    print('Digite a senha.')
-
-elif senha != '123456':
-    print('Senha incorreta.')
-
+    print("Digite a senha")
+elif senha != "123456":
+    print("Senha incorreta")
 else:
-    print('Logado.')
+    print("Logado")
+
+print()
 
 
-# Avaliação de curto circuito
+# Avaliação de curto ciruito:
 print(True, not True)
 print(False, not False)
+print()

@@ -1,16 +1,17 @@
 """
-- Interpolação básica de strings:
+    - Interpolação básica de strings:
 
-    s - string
-    d 'e' i - int
-    f - float
-    x 'e' X - Hexadecimal (0123456789ABCDEF)
+        s - string
+        d ou i - int
+        f - float
+        x ou X - hexadecimal (0123456789ABCDEF)
 """
 
-
-nome = 'Luiz'
+nome = "Luiz"
 preco = 1000.95897643
-variavel = '%s, o preço total foi %.2f' % (nome, preco)
+int_hexa = 15
+
+variavel = "%s, o preço total foi %.2f" % (nome, preco)
 
 print(variavel)
-print('O hexadecimal de %d é %X' % (15, 15))
+print("O hexadecimal de %d é %x" % (int_hexa, int_hexa))
