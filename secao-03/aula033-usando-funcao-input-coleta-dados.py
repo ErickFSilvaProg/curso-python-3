@@ -1,11 +1,23 @@
-# input: função que interage com o usuário no terminal.
-# Ele retorna um string para o programa.
+"""
+- input: Entreda de dados via terminal. 
 
-nome = input('Qual o seu nome? ')
-print(f'O seu nome é {nome}')
+    Função que interage com ousuário via terminal.
+    Ele retorna um string para o programa.
 
-numero_1 = input('\nDigite um número: ')
-numero_2 = input('Digite outro número: ')
-soma_numeros = int(numero_1) + int(numero_2)
-print(f'A soma dos números é: {soma_numeros}')
+"""
 
+usuario = input("Qual o seu nome? ")
+
+print(f"{usuario=}")
+print(f"O seu nome é {usuario}")
+print()
+
+
+numero1 = input("Digite um número: ")
+numero2 = input("Digite outro número: ")
+
+int_numero1 = int(numero1)
+int_numero2 = int(numero2)
+
+print(f"A soma dos números é: {int_numero1 + int_numero2}")
+print()
