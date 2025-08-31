@@ -3,11 +3,11 @@
 
 1. Peça ao usuário para digitar seu nome;
 2. Peça ao usuário para digitar sua idade;
-3. Se o nome ou idade forem digitados, exiba:
+3. Se o nome e a idade forem digitados, exiba:
     
     "Seu nome é [nome]"
     "Seu nome invertido é {nome invertido}"
-    "Seu [nome] contém (não) espaços"
+    "Seu nome contém (ou não) espaços"
     "Seu nome tem [n] letras"
     "A primeira letra do seu nome é [letra]"
     "A última letra do seu nome é [letra]"
@@ -17,23 +17,23 @@
     "Desculpe, você deixou campos vazios."
 """
 
+nome = input("Digite seu nome: ")
+idade = input("Digite sua idade: ")
+espaco = "não contém"
+print()
 
-nomeUsuario = input('Digite seu nome: ')
-idadeUsuario = input('Digite sua idade: ')
+if nome and idade:
 
-if nomeUsuario and idadeUsuario:
-    print(f'Seu nome é {nomeUsuario}.')
-    print(f'Seu nome invertido é {nomeUsuario[::-1]}.')
+    if " " in nome:
+        espaco = "contém"
 
-    if ' ' in nomeUsuario:
-        print(f'Seu nome contém espaço.')
-    else:
-        print(f'Seu nome não contém espaço.')
-
-    print(f'Seu nome tem {len(nomeUsuario)} letras')
-    print(f'A primeira letra do seu nome é {nomeUsuario[0]}.')
-    print(f'A última letra do seu nome é {nomeUsuario[-1]}')
-
+    print(f"Seu nome é {nome}")
+    print(f"Seu nome invertido é {nome[::-1]}")
+    print(f"Seu nome {espaco} espaços")
+    print(f"Seu nome tem {len(nome)} letras")
+    print(f"A primeira letra do seu nome é {nome[0]}")
+    print(f"A última letra do seu nome é {nome[-1]}")
 else:
-    print('Desculpe, você deixou campos vazios.')
+    print("Desculpe, você deixou campos vazios.")
 
+print()
