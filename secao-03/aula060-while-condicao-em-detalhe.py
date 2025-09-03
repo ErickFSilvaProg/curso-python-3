@@ -1,7 +1,9 @@
-# While - Condição em detalhes.
+"""
+- Estrutura de repetição: While e break.
 
-# Executa uma ação enquanto uma condição for verdadeira.
-# Loop infinito -> Quando um código não tem fim.
+    Executa uma ação enquanto uma condição for verdadeira.
+    Loop infinito -> Quando o código não tem fim.
+"""
 
 contador = 0
 
@@ -9,4 +11,5 @@ while contador < 10:
     contador += 1
     print(contador)
 
-print("Acabou")
+print("Acabou...")
+print()
