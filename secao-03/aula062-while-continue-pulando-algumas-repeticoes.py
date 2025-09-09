@@ -3,7 +3,7 @@
 
 contador = 0
 
-while contador < 22:
+while contador < 100:
     contador += 1
 
     if contador == 13:
@@ -12,7 +12,7 @@ while contador < 22:
 
     print(contador)
 
-    if contador == 20:
+    if contador == 22:
         break
 
 print("\nAcabou...")
