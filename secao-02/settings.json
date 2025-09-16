@@ -11,22 +11,9 @@
     "code-runner.ignoreSelection": true,
     "code-runner.executorMap": {
         "python": "cls ; python -u",
-<<<<<<< HEAD
-=======
-        "php": "cls ; php",
->>>>>>> ee18737435cf0d2cc2dd2aa19757995ea80d9e04
         "javascript": "cls ; node",
-        "typescript": "cls ; ts-node",
-        "sass": "cls ; sass --style expanded",
-        "scss": "cls ; scss --style expanded",
-<<<<<<< HEAD
-        "less": "cls ; cd $dir && lessc $fileName $fileNameWithoutExt.css",
-        "php": "cls ; php"
-=======
-        "less": "cls ; cd $dir && lessc $fileName $fileNameWithoutExt.css"
->>>>>>> ee18737435cf0d2cc2dd2aa19757995ea80d9e04
+        "python.defaultInterpreterPath": "python",
     },
-    "python.defaultInterpreterPath": "python",
     "git.autofetch": true,
     "editor.unicodeHighlight.invisibleCharacters": false
 }
