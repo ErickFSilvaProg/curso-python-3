@@ -1,13 +1,39 @@
-# For + Range
-# range -> range(start, stop, step)
+"""
+# for + range
 
-numeros_1 = range(10)
-numeros_2 = range(5, 10)
-numeros_3 = range(0, 10, 2)
-numeros_4 = 10
+    - range -> range(start, stop, step):
 
-for numero in numeros_1:
+        Quando é passado apenas um valor, esse valor é o stop.
+
+"""
+
+
+numeros = range(10) # O último valor não será impresso.
+print(numeros)
+
+for numero in numeros:
     print(numero)
 
-print()
-print(numeros_2[3])
+
+print("\n---------------------")
+numeros = range(1, 11) # O último valor não será impresso.
+print(numeros)
+
+for numero in numeros:
+    print(numero)
+
+
+print("\n---------------------")
+numeros = range(1, 11, 2) # O último valor não será impresso.
+print(numeros)
+
+for numero in numeros:
+    print(numero)
+
+
+print("\n---------------------")
+numeros = range(10, 0, -1) # O último valor não será impresso.
+print(numeros)
+
+for numero in numeros:
+    print(numero)
