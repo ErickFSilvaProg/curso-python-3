@@ -1,18 +1,29 @@
-# While/else
+"""
+- while/else
 
-nome = "Erick|Ferreira"
+    Quando o "laço while" é executado completamente, sem que haja uma saída forçada do mesmo, o "else" é executado.
+    Do contrário, o 'else' não será executado.
+
+"""
+
+# string = "Python com Django"
+string = "Python"
 i = 0
 
-while i < len(nome):
-    letra = nome[i]
+while i < len(string):
+    letra = string[i]
 
     if letra == " ":
+        print()
+        print("Encontrei um espaço na string")
         break
-
+    
     print(letra)
     i += 1
-
 else:
-    print("Não encontrei um espaço na 'string'")
+    print()
+    print("Não encontrei um espaço na string")
 
-print("Fora do 'While.'")
+print()
+print("Fora do 'while'.")
+print()
