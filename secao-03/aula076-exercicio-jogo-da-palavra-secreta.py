@@ -13,63 +13,49 @@ Faça um jogo para o usuário adivinhar qual a palavra secreta.
 3. Faça a contagem de tentativas do seu usuário.
 """
 
-
+# Bibliotecas:
 import os
 
-palavra_secreta = "perfume"
-numero_tentativas = 0
-# palavra_formada = ""
 
-# Servem como base de dados para consultas:
+# Variáveis Globais:
+palavra_secreta = "perfume"
 letras_acertadas = ""
-letras_erradas = ""
-# *****************************************
+numero_tentativas = 0
+
 
 while True:
+    # Variáveis locais:
+    palavra_formada = ""
 
-    letra_digitada = input("Digite uma letra ou $ para sair: ")
+    # Recebe a letra do usuário:
+    letra_digitada = input("Digite uma letra: ")
+    numero_tentativas += 1
+
+    # Garante que apenas um caractere seja digitado:
+    if len(letra_digitada) > 1:
+        print("Digite apenas uma letra.")
+        continue
+
+    # Valida a letra digitada com a palavra secreta:
+    if letra_digitada in palavra_secreta:
+        letras_acertadas += letra_digitada
     
-    if letra_digitada != "$":
-        numero_tentativas += 1
-
-        if len(letra_digitada) > 1:
-            os.system("cls") # Limpa o terminal
-        
-            print("(Digite apenas uma letra.)\n")
-            continue
-
-        if letra_digitada in palavra_secreta:
-            letras_acertadas += letra_digitada
+    # Monta a paralavra secreta de acordo com as letras recebidas:
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letras_acertadas:
+            palavra_formada += letra_secreta
         else:
-            letras_erradas += letra_digitada
-
-        os.system("cls") # Limpa o terminal
-
-        # Servem como base de dados para consultas:
-        print(f"\nLetras acertadas: {letras_acertadas}")
-        print(f"Letras erradas: {letras_erradas}\n")
-        # *****************************************
-
-        palavra_formada = ""
-        for letra_secreta in palavra_secreta:
-
-            if letra_secreta in letras_acertadas:
-                palavra_formada += letra_secreta
-            else:
-                palavra_formada += "*"
-        
-        print(f"Palavra formada: {palavra_formada}\n")
-
-        if palavra_formada == palavra_secreta:
-            os.system("cls") # Limpa o terminal
-        
-            print("VOCÊ CANHOU! PARABÉNS!")
-            print(f"A palavra era: {palavra_secreta}")
-            print(f"Tentativas: {numero_tentativas}\n")
-            
-            letras_acertadas = ""
-            numero_tentativas = 0
-    else:
-        os.system("cls") # Limpa o terminal
-        print("\n### Você saiu do sistema. ###\n")
+            palavra_formada += "*"
+    
+    # Limpa a tela deixando apenas a palavra formada e a entrada do usuário:
+    if palavra_formada != "":
+        os.system("cls")
+        print("Palavra formada:", palavra_formada)
+    
+    # Limpa a tela e exibe o resultado:
+    if palavra_formada == palavra_secreta:
+        os.system("cls")
+        print("Você ganhou, parabéns!")
+        print(f"A palavra era {palavra_formada}.")
+        print(f"Número de tentativas: {numero_tentativas}\n")
         break
