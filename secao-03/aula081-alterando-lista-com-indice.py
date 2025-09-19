@@ -1,48 +1,55 @@
 """
-- Listas em Python: (São semelhantes aos 'arrays' em outras linguagens.)
+# Listas em Python: (São semelhantes aos 'arrays' em outras linguagens.)
 
-Tipo list - Mutável
-Suporta vários valores de qualquer tipo.
+    Tipo list - Mutável
+    Suporta vários valores de qualquer tipo.
 
-Conhecimentos reutilizáveis - Índices e fatiamento.
+    Conhecimentos reutilizáveis - Índices e fatiamento.
 
-Métodos úteis: 
-    append - Adiciona um item ao final da lista. 
-    insert - Adiciona um item no índice escolhico.
-    pop - Remove do final ou do índice escolhido.
-    del - Apaga um índice.
-    clear - Limpa a lista.
-    extend - Estende a lista.
-    + - Concatena listas.
+    - Métodos úteis:
+
+        del - Apaga um índice.
+        insert - Adiciona um item no índice escolhico.
+        
+        append - Adiciona um item ao final da lista.
+        pop - Remove do final ou do índice escolhido.
+        
+        clear - Limpa a lista.
+        extend - Estende a lista.
+        + - Concatena listas.
+
 """
 
 
+# Lista:
 lista = [10, 20, 30, 40]
-print("Lista completa:", lista)
-print(lista[2])
+print(f"Lista original:")
+print(lista)
+print()
 
-numero = lista[2]
-print(numero)
-
+print(f"Índice 2 alterado:")
 lista[2] = 300
-print(lista[2])
-print(f"Lista completa: {lista}")
+print(lista)
+print()
 
-# Deletando item da lista:
-del lista[0]
-print(f"Lista completa: {lista}")
 
-# Adicionar item ao final da lista:
+# Deletando índices da lista: Informe o índice.
+print(f"Deletado o índice 2: {lista[2]}")
+del lista[2]
+print(lista)
+print()
+
+
+# Adicionar itens ao final da lista:
+print(f"Adicionado índices: 50, 60, 70")
 lista.append(50)
 lista.append(60)
 lista.append(70)
-lista.append(80)
-print(f"Lista completa: {lista}")
+print(lista)
+print()
 
-#  Remove item do final da lista:
-lista.pop()
-print(f"Lista completa: {lista}")
 
-# Exemplos:
-ultimo_valor = lista.pop()
-print(f"Lista completa: {lista}. (Removido, {ultimo_valor})")
+# Remove item do final da lista:
+print(f"Removido o último valor: {lista.pop()}")
+print(lista)
+print()
