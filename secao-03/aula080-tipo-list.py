@@ -1,34 +1,46 @@
 """
-- Listas em Python: (São semelhantes aos 'arrays' em outras linguagens.)
+# Listas em Python: (São semelhantes aos 'arrays' em outras linguagens.)
 
-Tipo list - Mutável
-Suporta vários valores de qualquer tipo.
+    Tipo list - Mutável
+    Suporta vários valores de qualquer tipo.
+    Conhecimentos reutilizáveis - Índices e fatiamento.
+    
+    - Métodos úteis:
 
-Conhecimentos reutilizáveis - Índices e fatiamento.
+        append, insert, pop, del, clear, extend, ...
+
 """
 
-#         01234
+# - Exemplo de string:
+#         12345
 #        -54321
 string = "ABCDE"
-print(string[2])
+print(f"{len(string)} caracteres do tipo string.\n")
 
 
-# Como criar listas:
-modelo_lista_1 = list() # Lista vazia
-modelo_lista_2 = [] # Lista vazia
+# - Exemplos criação de lista:
 
-print(modelo_lista_1, type(modelo_lista_1))
-print(modelo_lista_2, type(modelo_lista_2))
+# Exemplo 1: Menos utilizado.
+lista_1 = list()
+print(type(lista_1), lista_1)
+print(bool(lista_1)) # Lista vazia retorna 'False'
+print()
 
+# Exemplo 2: Mais utilizado.
+#        0    1     2              3    4
+#       -5   -4    -3             -2   -1
+lista = [123, True, "Programador", 1.2, ["HTML", "CSS", "JS", "DJANGO", "API"]]
 
-lista_1 = [123, True, "Luiz Otávio", 1.2, ["lista", "interna"]]
-print(lista_1)
-print(lista_1[0])
-print(lista_1[1])
-print(lista_1[2])
-print(lista_1[3])
-print(lista_1[4][0])
-print(lista_1[4][1])
+print(lista)
+print(lista[2].upper(), type(lista[2]))
 
-lista_1[2] = "Erick Ferreira"
-print(lista_1)
+lista[2] = "Programador Python"
+print(lista[2])
+print()
+
+for itens in lista:
+    print(itens)
+print()
+
+for sub_itens in lista[4]:
+    print(sub_itens)

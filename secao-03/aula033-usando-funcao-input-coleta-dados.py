@@ -1,7 +1,7 @@
 """
 - input: Entreda de dados via terminal. 
 
-    Função que interage com ousuário via terminal.
+    Função que interage com o usuário via terminal.
     Ele retorna um string para o programa.
 
 """
