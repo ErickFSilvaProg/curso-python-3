@@ -16,16 +16,15 @@ Métodos úteis:
     + - Concatena listas.
 """
 
-# 
-lista_a = [1,2,3]
-lista_b = [4,5,6]
 
-# Concatenando as listas:
+lista_a = ["lista_a",1,2,3]
+lista_b = ["lista_b",4,5,6]
+
+
+# Concatenando listas:
 lista_c = lista_a + lista_b
-
-# O método 'extend' não retorna nada, apenas executa uma ação:
-lista_a.extend(lista_b)
-
-# 
 print(lista_c)
+
+# Extendendo listas: Este método espande o conteúdo da "lista_a" com o conteúdo da "lista_b".
+lista_a.extend(lista_b)
 print(lista_a)

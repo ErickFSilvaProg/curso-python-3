@@ -1,47 +1,59 @@
 """
-- Listas em Python: (São semelhantes aos 'arrays' em outras linguagens.)
+# Listas em Python: (São semelhantes aos 'arrays' em outras linguagens.)
 
-Tipo list - Mutável
-Suporta vários valores de qualquer tipo.
+    Tipo list - Mutável
+    Suporta vários valores de qualquer tipo.
 
-Conhecimentos reutilizáveis - Índices e fatiamento.
+    Conhecimentos reutilizáveis - Índices e fatiamento.
 
-Métodos úteis: 
-    append - Adiciona um item ao final da lista. 
-    insert - Adiciona um item no índice escolhico.
-    pop - Remove do final ou do índice escolhido.
-    del - Apaga um índice.
-    clear - Limpa a lista.
-    extend - Estende a lista.
-    + - Concatena listas.
+    - Métodos úteis:
+
+        del - Apaga um índice específico.
+        insert - Adiciona um item no índice escolhico.
+        
+        append - Adiciona um item ao final da lista.
+        pop - Remove um item do final da lista ou de um índice escolhido.
+        
+        clear - Limpa/esvazia a lista.
+        extend - Estende a lista.
+        + - Concatena listas.
+
 """
 
-
 lista = [10, 20, 30, 40]
+print(f"Lista inicial: {lista}")
+print()
+
+
+# revisando:
+
+lista.append("Luiz") # Adiciona um item ao final da lista.
+lista.append("Guilherme")
 print(lista)
 
-lista.append("Luiz")
+lista.pop() # Remove um item do final da lista ou de um índice escolhido.
 print(lista)
 
-nome = lista.pop()
-print(nome)
-
-lista.append(1233)
+del lista[-1] # Apaga um item específico.
 print(lista)
 
-del lista[-1]
+lista.clear() # limpa/esvazia a lista.
+print(lista)
+print()
+
+
+#        0   1   2   3
+lista = [10, 20, 30, 40]
+print(f"Lista inicial: {lista}")
+print()
+
+# Inserindo item em qualquer lugar da lista:
+#       índice, valor
+lista.insert(0, 5)
+lista.insert(3, 300)
+lista.insert(-1, "último?")
 print(lista)
 
-lista.clear()
+lista.insert(100, 100) # Ele irá inserir no último índice. Não existe o índice "100".
 print(lista)
-
-lista.insert(0, 0)
-lista.insert(1, 10)
-lista.insert(2, 20)
-lista.insert(3, 30)
-lista.insert(4, 40)
-print(lista)
-
-lista.insert(1, 1)
-lista.insert(100, 100) # Ele irá inserir no último índice, já que não existe o índice '100'.
-print(lista)
+print()

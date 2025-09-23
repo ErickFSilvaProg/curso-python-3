@@ -50,6 +50,7 @@ print()
 
 
 # Remove item do final da lista:
-print(f"Removido o último valor: {lista.pop()}")
+removido = lista.pop()
+print(f"Removido o último valor: {removido}")
 print(lista)
 print()
