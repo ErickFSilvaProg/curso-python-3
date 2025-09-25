@@ -26,6 +26,6 @@ print()
 # Coloca o primeiro caractere da string maiúsculo.
 print(string.capitalize())
 
-# Complementa a string co zeros até completar a quantidade informada.
+# Complementa a string com zeros até completar a quantidade informada.
 print(string.zfill(20))
 print()
