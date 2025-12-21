@@ -1,6 +1,17 @@
-# 'for in' com listas:
+"""
+# "for in" com listas
 
-lista = ["Maria", "Helena", "Luiz"]
+"""
 
-for nome in lista:
+
+pessoas = ["Maria", "Helena", "Luiz"]
+print(pessoas)
+print()
+
+for letra in "ABC":
+    print(letra)
+print()
+
+for nome in pessoas:
     print(nome, type(nome))
+print()

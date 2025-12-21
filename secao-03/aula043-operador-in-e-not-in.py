@@ -29,12 +29,25 @@ print("zero" in nome)
 
 print("*" * 10, "\n")
 
-nome = input("Digite seu nome: ")
-encontrar = input("Digite o que deseja encontrar: ")
 
-if encontrar in nome:
-    print(f"{encontrar} está em {nome}")
-elif encontrar not in nome:
-    print(f"{encontrar} não está em {nome}")
+# Exemplo:
+nome = input("Digite um texto: ")
+print(nome)
+print()
 
-print("\n")
+while True:
+
+    encontrar = input("O que deseja encontrar?: ")
+    print()
+
+    if encontrar == "sair" or encontrar == "Sair" or encontrar == "SAIR":
+        break
+
+    if encontrar in nome:
+        print(f"Busca encontrada")
+        print(f"[{encontrar.upper()}] existe em: {nome}")
+    else:
+        print(f"Busca não encontrada")
+
+    print()
+print()

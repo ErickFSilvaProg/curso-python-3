@@ -24,7 +24,10 @@ Se estiver "Restricted", altere-o para "RemoteSigned": Set-ExecutionPolicy AllSi
         Redefine a política de execução para a política padrão do sistema.
 
 Para criar o "Ambiente Virtual Python: venv", execute: python -m venv venv
-Para ativar o "Ambiente Virtual Python: venv", execute: .\venv\Scripts\activate
+Para ativar o "Ambiente Virtual Python: venv", execute: .\\venv\\Scripts\\activate
 """
 
-print("Configurações no Python")
+print("Hello world!")
+print("Configurações do Python.")
+print("Python para todos!")
+print()

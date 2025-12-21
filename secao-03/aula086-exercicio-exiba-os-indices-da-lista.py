@@ -6,24 +6,27 @@ Exemplo:
     0 Maria
     1 Helena
     2 Luiz
+
 """
+
 
 # Primeira forma:
 lista = ["Maria", "Helena", "Luiz"]
-count = 0
+i = 0
 
 for pessoa in lista:
-    print(f"{count} {pessoa}")
-    
-    count += 1
+    print(f"{i} {pessoa}")
+    i += 1
+print()
 
 
 # Segunda forma:
-lista2 = ["João", "Antônio", "Erick", "Gustavo", "Pedro", "Miguel"]
+lista2 = ["João", "Antônio", "Erick", "Gustavo", "Pedro"]
 lista2.append("Lucas")
+lista2.insert(1, "Miguel")
+
 indices = range(len(lista2))
 
-print(indices)
-
-for indice in indices:
-    print(indice, lista2[indice], type(lista2[indice]))
+for i in indices:
+    print(i, lista2[i])
+print()
