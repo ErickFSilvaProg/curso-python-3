@@ -1,14 +1,12 @@
-# Em Python não tem como fazer comentários muiltilinhas.
+# O Python não tem comentário multilinha.
+print('O Python não tem comentário multilinha.')
 
 """
-- DocString:
+- Docstring:
 
-Isso não é um comentário, mas pode ser utilizado para tal feito.
-
-O interpretador do Python ler o 'docstring'.
-
-Muito utilizado para escrever notas ou explicar o código.
-
+    Para deixer uma mensagem multilinha, utiliza-se o 'docstring'.
+    O interpretador do Python ler o 'docstring'.
+    Ele é muito utilizado para escrever notas eu explicar o código.
 """
 
-print("Python.")
+print('Python 3')
