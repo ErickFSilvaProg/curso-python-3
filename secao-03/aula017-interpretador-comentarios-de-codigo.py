@@ -1,4 +1,4 @@
-# Comentário de uma linha.
+# Comentário de uma linha em Python.
 
 print('Python', 2 + 1, '\n')
 
@@ -7,3 +7,4 @@ print('Python', 2 + 1, '\n')
 
 print('- Função print: Exibe uma informação no terminal.')
 print("- O python ler o código da esquerda para a direita. De cima para baixo.")
+print()

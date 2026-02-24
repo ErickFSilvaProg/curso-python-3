@@ -1,12 +1,9 @@
 """
-    - Função print()
-
-        Recebe argumentos para serem exibidos ou processados.
+    —→ Função print()
+        ↪ Recebe argumentos para serem exibidos ou processados.
     
-    O Python diferencia letras maiúsculas de letras minúsculas.
+    —→ O Python diferencia letras maiúsculas de letras minúsculas.
 """
-
-# O Python diferencia as letras maiúsculas das minúsculas.
 
 # - Argumentos não nomeados:
 print('- Argumentos não nomeados:')
